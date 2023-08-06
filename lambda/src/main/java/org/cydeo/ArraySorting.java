@@ -13,11 +13,23 @@ public class ArraySorting {
         as.sort(bubbleSort);
 
 
+        Sorting noLambda = new QuickSort();
+        noLambda.sort();
+
+        Sorting quickSorting = () -> System.out.println("Quick sorting");
+        as.sort(quickSorting);
+
+        Sorting bubbleSorting = () -> System.out.println("Bubble sorting");
+        as.sort(bubbleSorting);
+
+        as.sort(() -> System.out.println("Quick sorting"));
+
+
     }
 
     private void sort(Sorting sorting) {
         sorting.sort();
     }
-
-
 }
+
+
