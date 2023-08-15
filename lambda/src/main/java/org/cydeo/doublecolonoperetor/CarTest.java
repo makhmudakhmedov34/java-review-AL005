@@ -30,9 +30,5 @@ public class CarTest {
         Car nissan = b2.apply("Nissan",2021);
         System.out.println(nissan.getMake()+" "+nissan.getModel());
 
-
-
-
-
     }
 }

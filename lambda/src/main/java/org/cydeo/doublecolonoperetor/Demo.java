@@ -2,6 +2,7 @@ package org.cydeo.doublecolonoperetor;
 
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class Demo {
     public static void main(String[] args) {
@@ -30,6 +31,12 @@ public class Demo {
 
         Consumer<Integer> display2 = System.out::println;
         display2.accept(5);
+
+      BiFunction<MyClass,Integer,Double> v2= MyClass::method;
+
+        BiFunction<String,String,String> v3= String::concat;
+
+
 
 
     }
