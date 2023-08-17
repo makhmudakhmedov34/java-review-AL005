@@ -35,10 +35,11 @@ public class StreamOperations {
                 .map(i -> i*3)
                 .forEach(System.out::println);
 
-
-
-
-
+        System.out.println("Print Num of Characters");
+        List<String> work = Arrays.asList("JAVA","APPLE","HONDA","DEVELOPER");
+        work.stream()
+                .map(String::length)
+                .forEach(System.out::println);
+        }
     }
 
-}
