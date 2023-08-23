@@ -24,6 +24,23 @@ public class Reducing {
         System.out.println(min.get());
         System.out.println(sum.get());
 
+        int dishCount = DishData.getAll().stream()
+                .map(d ->1)
+                .reduce(Integer::sum).get();
+        System.out.println(dishCount);
+
+        int dishCount2 = DishData.getAll().stream()
+                .map(d ->1)
+                .reduce(0,(a,b) -> a+b);
+        System.out.println(dishCount2);
+
+        long count = DishData.getAll().stream().count();
+        System.out.println(count);
+
+
+
+
+
 
     }
 }
